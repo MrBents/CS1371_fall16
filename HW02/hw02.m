@@ -2,33 +2,31 @@
 % Name         : Max Bentata
 % T-square ID  : mbentata3
 % GT Email     : mbentata@gatech.com
-% Homework     : 01/original
+% Homework     : 02/original
 % Course       : CS1371
 % Section      : C03
 % Collaboration: "I worked on the homework assignment alone, using
-%                  only course materials."
+%                only course materials."
 %                 
 %
 %
 % Files provided with this homework:  
-%	ABCs_functions.m
-%	ABCs_homeworkOverview.m
-%	ABCs_hw01_pretest.p
-%	ASA_soln.p
-%	Homework01_DrillProblems.pdf
-%	candy_soln.p
-%	distCalc_soln.p
-%	hw01.m
-%	quadSolver_soln.p
+%	ABCs_hw02_pretest.p
+%	ABCs_moreFunctions.m
+%	Homework02_DrillProblems.pdf
+%	badApples_soln.p
+%	clockHands_soln.p
+%	fib_soln.p
+%	hw02.m
+%	spherePacking_soln.p
 %
 % Files to submit:
-%	ABCs_functions.m
-%	ABCs_homeworkOverview.m
-%	ASA.m
-%	candy.m
-%	distCalc.m
-%	hw01.m
-%	quadSolver.m
+%	ABCs_moreFunctions.m
+%	badApples.m
+%	clockHands.m
+%	fib.m
+%	hw02.m
+%	spherePacking.m
 %
 % Instructions:
 %   1) Follow the directions for each problem very carefully or you will
@@ -53,23 +51,22 @@
 %% PART 1.  ABC Problems
 %--------------------------------------------------------------------------
 %
-% Part of this homework are m-files called "ABCs_homeworkOverview.m" and "ABCs_functions.m".
-% Open these files in MATLAB and complete them
+% Part of this homework is an m-file called "ABCs_moreFunctions.m".
+% Open this file in MATLAB and complete it
 % according to the directions contained within. You can test your answers with
 % the test file listed below.
 %
 % Files to Complete: 
-%	ABCs_homeworkOverview.m
-%	ABCs_functions.m
+%	ABCs_moreFunctions.m
 %
 % ABCs File Testing:
-%	ABCs_hw01_pretest.p
+%	ABCs_hw02_pretest.p
 %
 %==========================================================================
 %% PART 2. Drill Problems
 %--------------------------------------------------------------------------
 %
-% Included with this homework is a file entitled "Homework01_DrillProblems.pdf",
+% Included with this homework is a file entitled "Homework02_DrillProblems.pdf",
 % containing instructions for 4 drill problems that cover the
 % following topic:
 %
@@ -89,56 +86,60 @@
 % The function call with the test-inputs is shown in the first line of each
 % test case, and the correct outputs are displayed in subsequent lines.
 %
-%% Function Name: distCalc
+%% Function Name: badApples
 %
 % Test Cases:
-% [dist1] = distCalc(-2, 5, 3, -4);
-% 	dist1 => 10.296
+% [red1, grn1] = badApples(10, 10, 8, 8);
+% 	red1 => 10
+% 	grn1 => 10
 % 
-% [dist2] = distCalc(21, 21, 3, 21);
-% 	dist2 => 18
+% [red2, grn2] = badApples(20, 30, 18, 22);
+% 	red2 => 4
+% 	grn2 => 16
+% 
+% [red3, grn3] = badApples(40, 10, 10, 10);
+% 	red3 => 60
+% 	grn3 => 0
 %
 %--------------------------------------------------------------------------------
-%% Function Name: quadSolver
+%% Function Name: fib
 %
 % Test Cases:
-% [pos1, neg1] = quadSolver(25, 0, -25);
-% 	pos1 => 1
-% 	neg1 => -1
+% nFib1 = fib(3);
+%   nFib1 => 2
 % 
-% [pos2, neg2] = quadSolver(1, -5, 6);
-% 	pos2 => 3
-% 	neg2 => 2
+% nFib2 = fib(10);
+%   nFib2 => 55
+% 
+% nFib3 = fib(39);
+%   nFib3 => 63245986
 %
 %--------------------------------------------------------------------------------
-%% Function Name: ASA
+%% Function Name: spherePacking
 %
 % Test Cases:
-% [b1, c1] = ASA(23, 4, 45);
-% 	b1 => 1.69
-% 	c1 => 3.05
+% num1 = spherePacking(5, 10);
+%   num1 => 1 
 % 
-% [b2, c2] = ASA(108, 10, 45);
-% 	b2 => 20.95
-% 	c2 => 15.58
+% num2 = spherePacking(6, 10);
+%   num3 => 0
 % 
-% [b3, c3] = ASA(90, 1, 45);
-% 	b3 => 1.41
-% 	c3 => 1
+% num3 = spherePacking(1.5, 12);
+%   num3 => 90
 %
 %--------------------------------------------------------------------------------
-%% Function Name: candy
+%% Function Name: clockHands
 %
 % Test Cases:
-% [perKid1, wasted1] = candy(300, 12);
-% 	perKid1 => 25
-% 	wasted1 => 0
+% [hr1, min1] = clockHands(3, 15, 10);
+% 	hr1 => 3
+% 	min1 => 25
 % 
-% [perKid2, wasted2] = candy(34, 13);
-% 	perKid2 => 2
-% 	wasted2 => 8
+% [hr2, min2] = clockHands(4, 45, -30);
+% 	hr2 => 4
+% 	min2 => 15
 % 
-% [perKid3, wasted3] = candy(100, 10);
-% 	perKid3 => 10
-% 	wasted3 => 0
+% [hr3, min3] = clockHands(1, 10, -134);
+% 	hr3 => 10
+% 	min3 => 56
 %
