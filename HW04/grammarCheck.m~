@@ -1,0 +1,10 @@
+function [ pass ] = grammarCheck( sentence )
+% Checks for grammar
+
+pass = true;
+
+
+
+
+end
+
