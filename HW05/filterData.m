@@ -11,7 +11,7 @@ sp = q1 - 1.5*IQR;
 
 original(original >= fp | original <= sp) = med;
 
-output = original;
+% output = original;
 
 end
 

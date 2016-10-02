@@ -12,8 +12,14 @@ mult_test_1 = isequal(multTable(sampleMultTable1), multTable_soln(sampleMultTabl
 mult_test_2 = isequal(multTable(sampleMultTable2), multTable_soln(sampleMultTable2));
 mult_test_3 = isequal(multTable(sampleMultTable3), multTable_soln(sampleMultTable3));
 
-load('scheduler_testCases.mat')
+load('scheduler_testCases.mat');
 
 schedule_test_1 = isequal(scheduler(schedule1, events1), scheduler_soln(schedule1, events1));
 schedule_test_2 = isequal(scheduler(schedule2, events2), scheduler_soln(schedule2, events2));
 schedule_test_3 = isequal(scheduler(schedule3, events3), scheduler_soln(schedule3, events3));
+
+load('jumbledRowsCols.mat');
+
+test_puzzle_1 = isequal(puzzleBox(jumbled1, rows1, cols1), puzzleBox_soln(jumbled1, rows1, cols1));
+test_puzzle_2 = isequal(puzzleBox(jumbled2, rows2, cols2), puzzleBox_soln(jumbled2, rows2, cols2));
+test_puzzle_3 = isequal(puzzleBox(jumbled3, rows3, cols3), puzzleBox_soln(jumbled3, rows3, cols3));

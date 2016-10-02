@@ -2,7 +2,7 @@
 % Name         : Max Bentata
 % T-square ID  : mbentata3
 % GT Email     : mbentata@gatech.edu
-% Homework     : 05/original
+% Homework     : 05/resubmission
 % Course       : CS1371
 % Section      : C03
 % Collaboration: "I worked on the homework assignment alone, using
