@@ -28,8 +28,8 @@ function [A, B, C, D, E, F] = ABCs_iteration(vec, num)
 % [2 8 6 2 3]
 
 A=[];
-for ind= ?                  % ind are the indices of vec
-    A=[vec( ? ), ? ];       % Puts the next element from vec before
+for ind= length(vec):-1:1                  % ind are the indices of vec
+    A=[A vec(ind)];       % Puts the next element from vec before
 end                         % everything in A
 
 
@@ -39,11 +39,11 @@ end                         % everything in A
 % this while loop to receive any credit. (B)
 i = 1;                      % Start from 1
 B = 0;                      % Initializes a counting variable
-while ?                     % When i is less than or equal to num
-    if mod(sqrt( ? ),1)==0  % Checks to see if sqrt(i) is an integer root
+while i < num                     % When i is less than or equal to num
+    if mod(sqrt( i ),1)==0  % Checks to see if sqrt(i) is an integer root
         B=B+1;              % Increment the counter if an integer is found
     end
-    ? = ? + 1;              % Moves to the next index position
+    i = i + 1;              % Moves to the next index position
 end
 
 
@@ -70,10 +70,10 @@ end
 % 13    end
 
 % The value stored in 'rna' after the code has run is (C):
-C = NaN;
+C = 'UAAU';
 
 % The value stored in 'errCount' after the code has run is (D):
-D = NaN;
+D = 1;
 
 % The following code is run in the Command Window. List the value of
 % 'tot' at the end of each iteration as a separate element in a vector.
@@ -95,7 +95,7 @@ D = NaN;
 % 11            tot = tot + curr;
 % 12        end
 % 13    end
-E = NaN
+E = [10 10 12 12 12];
 
 % Why could the terminating condition for the while loop above be a problem?
 %
@@ -105,7 +105,7 @@ E = NaN
 % B. prev and curr may not ever be the same value, therefore the loop will run forever.
 % C. prev and curr will never be the same value, therefore the loop will run forever.
 % D. prev and curr may not ever be the same value, therefore idx will go out of bounds.
-F = NaN;
+F = 'D';
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
