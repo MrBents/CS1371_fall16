@@ -1,8 +1,10 @@
 function out = lostAbroad( map, directions )
     sentence = [];
 
+%   for every coordinate in directions
     for i = 1:length(directions)-1
         lc = i;
+%       get actu coordinates
         spx = directions(1, lc);
         spy = directions(2, lc);
 
@@ -13,8 +15,11 @@ function out = lostAbroad( map, directions )
 
         deltax = next_coordx - spx;
         deltay = next_coordy - spy;
-        if deltax == 0 
-        if deltax == 0
+        
+        if deltax == 0 && deltay == 0
+            map(spx, spy)
+            sentence = [sentence map(spx, spy)];
+        elseif deltax == 0
             maxit = deltay;
         elseif deltay == 0
             maxit = deltax;
@@ -22,7 +27,7 @@ function out = lostAbroad( map, directions )
 
         negative = maxit < 0;
         if abs(maxit) ~= 1
-            for j = 1:maxit-1
+            for j = 1:abs(maxit)-1
 
                 if negative
                    j = -j; 
