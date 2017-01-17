@@ -1,0 +1,16 @@
+function powerPerLiter(in)
+    [~,~,fh] = xlsread(in);
+    heads = fh(1, :);
+    data = fh(2:end, :);
+    [hd, len] = size(data);
+    heads(1, len + 1) = 'Ratio';
+
+    for i = 1:height
+        if length(strfind(data{i, 2})) > 1
+            data{i, 4} = data{i, 4} + round(data{i, 4}/10);
+        end
+        data{i, 5} = round(data{i, 4}/data{i, 3});
+    end
+    whole = [heads, data];
+end
+    

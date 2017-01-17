@@ -1,21 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Name         : <your name>
-% T-square ID  : <your t-square ID. Example: gburdell3>
-% GT Email     : <your GT email address>
-% Homework     : <homework assignment number/original or resubmission>
+% Name         : Max Bentata
+% T-square ID  : mbentata3
+% GT Email     : mbentata@gatech.edu
+% Homework     : 13/original
 % Course       : CS1371
-% Section      : <Your Section>
-% Collaboration: <place here one of the following:
-%                 "I worked on the homework assignment alone, using
+% Section      : C03
+% Collaboration:  "I worked on the homework assignment alone, using
 %                  only course materials."
-%                 OR
-%                 "I worked on this homework with <give the names of the
-%                  people you worked with>, used solutions or partial
-%                  solutions provided by <name the people or other
-%                  sources>, and referred to <cite any texts, web sites, or
-%                  other materials not provided as course materials for CS
-%                  1371.>"
-%
+%                 
 % Files to submit:
 %	ABCs_images.m
 %	hiddenSound.m

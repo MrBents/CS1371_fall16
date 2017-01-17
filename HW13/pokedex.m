@@ -17,6 +17,7 @@ for i = 1:length(nationalPokedex)
     pokedexIm = imresize(pokedexIm,[s(1) s(2)]);
     mask = pokedexIm(:,:,1) == 0 & pokedexIm(:,:,2) == 0 & pokedexIm(:,:,3) == 0;
     mask3 = cat(3, ~mask, ~mask, ~mask);
+    
     foundPokemon = isequal(in(mask3), pokedexIm(mask3));
     if foundPokemon
         out = [nationalPokedex(i).pokemon ', the ' nationalPokedex(i).description ' pokemon.'];

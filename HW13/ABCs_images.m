@@ -33,11 +33,11 @@ C = A(:,:,[1 3 2]);
 %
 % Write your code here (it will be a few lines):
 img = double(A);
-avg =(img(:, :, 1)+img(:, :, 2)+img(:, :, 3))./3;
-gray(:, :, 1) = avg; 
-gray(:, :, 2) = avg;
-gray(:, :, 3) = avg;
-D = uint8(gray);  
+avg =(img(:, :, 1)+img(:, :, 2)+img(:, :, 3))/3;
+jose(:, :, 1) = avg; 
+jose(:, :, 2) = avg;
+jose(:, :, 3) = avg;
+D = uint8(jose);  
 
 % e) Negative. Store the negative of the image matrix A in the variable E. 
 %
